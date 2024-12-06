@@ -1,0 +1,13 @@
+[project]
+name = "crewai-deeplearningai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+# Start of Selection
+# Start of Selection
+requires-python = ">=3.10, <3.13"
+# End of Selection
+dependencies = [
+    "crewai-tools>=0.17.0",
+    "crewai>=0.86.0",
+]
