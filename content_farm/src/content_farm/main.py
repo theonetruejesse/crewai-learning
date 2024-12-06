@@ -2,7 +2,6 @@
 import sys
 import warnings
 
-from content_farm.crews.report import ReportCrew
 from content_farm.crews.content import ContentCrew
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")

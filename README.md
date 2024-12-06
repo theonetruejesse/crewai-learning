@@ -9,3 +9,4 @@ informally following the course by andrew ng
 ### Thoughts
 
 - pretty impressed with their cli, project structure is super well designed; it's framework tier - uv adoption is making python project ecosystem competitive with npm and cargo
+- need to check whether or not streaming is supported in crewai
