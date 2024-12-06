@@ -11,4 +11,5 @@ dependencies = [
     "crewai-tools>=0.17.0",
     "crewai>=0.86.0",
     "ipykernel>=6.29.5",
+    "langchain-community>=0.3.9",
 ]
