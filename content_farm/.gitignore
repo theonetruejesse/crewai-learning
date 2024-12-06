@@ -1,2 +1,14 @@
-.env
+# Testing
+.coverage
+coverage.xml
+.pytest_cache/
+
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+.ruff_cache/
+
+# Development
+.venv/
+.env

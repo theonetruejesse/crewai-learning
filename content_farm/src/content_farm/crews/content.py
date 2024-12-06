@@ -1,18 +1,23 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
+from content_farm.llm import get_ollama_llm
+
 @CrewBase
 class ContentCrew():
 	# crews folder pattern doesn't work well given config file bugs
 	agents_config = '../config/agents.yaml'
 	tasks_config = '../config/tasks.yaml'
 
+	# def __init__(self):
+	# 	self.llm = get_ollama_llm() 
+
 	""" Agents """
 
 	@agent
 	def planner(self) -> Agent:
 		return Agent(
-			config=self.agents_config['planner'],
+			config=self.agents_config['planner'],	
 			verbose=True
 		)
 
@@ -54,8 +59,8 @@ class ContentCrew():
 	@crew
 	def crew(self) -> Crew:
 		return Crew(
-			agents=self.agents, # Automatically created by the @agent decorator
-			tasks=self.tasks, # Automatically created by the @task decorator
+			agents=self.agents, 
+			tasks=self.tasks,
 			process=Process.sequential,
 			verbose=True,
 		)
