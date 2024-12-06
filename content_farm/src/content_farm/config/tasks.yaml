@@ -1,17 +1,44 @@
-research_task:
+plan_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    1. Prioritize the latest trends, key players,
+       and noteworthy news on {topic}.\n
+    2. Identify the target audience, considering
+       their interests and pain points.\n
+    3. Develop a detailed content outline including
+       an introduction, key points, and a call to action.\n
+    4. Include SEO keywords and relevant data or sources.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    A comprehensive content plan document
+    with an outline, audience analysis,
+    SEO keywords, and resources.
+  agent: planner
 
-reporting_task:
+write_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    1. Use the content plan to craft a compelling
+       blog post on {topic}.\n
+    2. Incorporate SEO keywords naturally.\n
+    3. Sections/Subtitles are properly named
+       in an engaging manner.\n
+    4. Ensure the post is structured with an
+       engaging introduction, insightful body,
+       and a summarizing conclusion.\n
+    5. Proofread for grammatical errors and
+       alignment with the brand's voice.\n
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
+    A well-written blog post
+    in markdown format, ready for publication,
+    each section should have 2 or 3 paragraphs.
+  agent: writer
+
+edit_task:
+  description: >
+    Proofread the given blog post for
+    grammatical errors and
+    alignment with the brand's voice.
+  expected_output: >
+    A well-written blog post in markdown format,
+    ready for publication,
+    each section should have 2 or 3 paragraphs.
     Formatted as markdown without '```'
-  agent: reporting_analyst
+  agent: editor

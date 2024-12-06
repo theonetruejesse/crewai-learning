@@ -9,6 +9,7 @@ dependencies = ["crewai[tools]>=0.86.0,<1.0.0"]
 [project.scripts]
 content_farm = "content_farm.main:run"
 run_crew = "content_farm.main:run"
+dev = "content_farm.main:run"
 train = "content_farm.main:train"
 replay = "content_farm.main:replay"
 test = "content_farm.main:test"

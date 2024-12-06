@@ -1,3 +1,5 @@
+# generated with crewai init -> kept for reference
+
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
@@ -6,14 +8,15 @@ from crewai.project import CrewBase, agent, crew, task
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
 
 @CrewBase
-class ContentFarm():
-	"""ContentFarm crew"""
+class ReportCrew():
+
+	"""ReportCrew crew"""
 
 	# Learn more about YAML configuration files here:
 	# Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended
 	# Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended
-	agents_config = 'config/agents.yaml'
-	tasks_config = 'config/tasks.yaml'
+	agents_config = '../config/agents.yaml'
+	tasks_config = '../config/tasks.yaml'
 
 	# If you would like to add tools to your agents, you can learn more about it here:
 	# https://docs.crewai.com/concepts/agents#agent-tools
@@ -49,7 +52,7 @@ class ContentFarm():
 
 	@crew
 	def crew(self) -> Crew:
-		"""Creates the ContentFarm crew"""
+		"""Creates the ReportCrew crew"""
 		# To learn how to add knowledge sources to your crew, check out the documentation:
 		# https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 
